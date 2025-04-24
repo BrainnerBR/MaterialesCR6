@@ -1,0 +1,261 @@
+.generalContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+    gap: 5vw;
+    padding-top: 16vh;
+}
+
+.left {
+    text-align: left;
+    width: 40vh;
+}
+
+.left h1 {
+    font-size: 3vh;
+    padding-bottom: 2vh;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left h2 {
+    font-size: 2.2vh;
+}
+
+.left p {
+    font-size: 2.2vh;
+    line-height: 1.5;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right img {
+    width: 30vw;
+    height: auto;
+    max-height: 400px;
+}
+
+
+.myvContainer {
+    display: flex;
+    justify-content: center;
+    gap: 5vh;
+    margin-top: 15vh;
+    padding: 0;
+}
+
+.myvContainer {
+    padding: 1vh 15vh; /* Ajuste del padding para dispositivos móviles */
+    background: #aaaaaa13;
+    width: 100%;
+    height: auto; /* Altura automática */
+    margin-bottom: -20vh;
+}
+
+.myvContainer p {
+    font-size: 2.2vh;
+    line-height: 3.2vh;
+}
+.counterContainer {
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 3vh 2vh;
+    margin-top: 20vh;
+    background: #aaaaaa13;
+    
+    width: 100%;
+    height: 30vh;
+    align-items: center;
+}
+
+.counter {
+    text-align: center;
+    position: relative;
+}
+
+.counter:not(:last-child)::before{
+    content: '';
+    background: #000;
+    position: absolute;
+    width: 1px;
+    height: 7vh;
+    top: 50%;
+    transform: translateY(-50%);
+    right: -1vh;
+}
+.fa-icon{
+    font-size: 7vh;
+    padding-bottom: 1vh;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.counter h1 {
+    font-size: 4vh;
+    margin-bottom: 0; 
+
+}
+.data-span{
+    font-size: 28px;
+}
+
+.counter h3 {
+    font-size: 2.5vh;
+    margin-top: 0; 
+    font-weight: 200;
+}
+
+.brandPromiseContainer{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 10vw;
+    align-items: center;
+    padding: 10vh 10vw;
+    background-color: white;
+    justify-items: center;
+}
+.brandLeft h1{
+    font-size: 4vh;
+    font-weight: 700;
+    color: #000;
+}
+.brandRight {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    gap: 5vh;
+    padding-left: 3vw;
+  }
+  
+  .brandRight::before {
+    content: '';
+    position: absolute;
+    left: -0.1vh; /* alineado con los dots */
+    top: 0.8vh; /* empieza un poco más abajo */
+    height: calc(100% - 5vh); /* ajustá este valor para terminar justo debajo del último dot */
+    width: 2px;
+    background-color: red;
+  }
+  
+.promiseItem{
+    display: flex;
+    align-items: flex-start;
+    gap: 1vw;
+    position: relative;
+}
+.dot{
+    width: 1.2vh;
+    height: 1.2vh;
+    background-color: var(--rojo);
+    border-radius: 50%;
+    position: absolute;
+    left: -3.3vw;
+    top: 0.7vh;
+}
+.text h3{
+    margin: 0;
+    font-size: 2.4vh;
+    font-weight: 400;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+.text p{
+    margin-top: 0.5vh;
+    font-size: 2vh;
+    color: #000;
+}
+
+@media (max-width: 768px) {
+    .generalContainer {
+        grid-template-columns: 1fr;
+        gap: 5vh; /* más espacio vertical en móviles */
+        text-align: center;
+        padding-top: 15vh;
+    }
+    span{
+        font-size: 1.8vh;
+    }
+    .left {
+        text-align: center;
+        padding: 0 5vw;
+    }
+
+    .left p {
+        font-size: 2.2vh;
+    }
+    .left h1{
+        font-size: 3vh;
+    }
+
+    .right img {
+        width: 60vw;
+        max-height: 300px;
+    }
+    .myvContainer{
+        flex-direction: column;
+        padding: 2vh 5vw;
+        margin-top: 10vh;
+        gap: 3vh;
+    }
+    .counterContainer {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 3vh 0;
+        gap: 5vh;
+    }
+    .counter:not(:last-child)::before {
+        display: none; /* Quita las líneas divisorias en móvil */
+    }
+
+    .fa-icon {
+        font-size: 5vh;
+    }
+
+    .counter h1 {
+        font-size: 3.5vh;
+    }
+
+    .counter h3 {
+        font-size: 2.3vh;
+    }
+
+    span {
+        font-size: 2.2vh;
+    }
+    .brandPromiseContainer {
+        grid-template-columns: 1fr;
+        text-align: center;
+        padding: 5vh 5vw;
+      }
+    
+      .brandRight {
+        padding-left: 0;
+        border-left: none;
+        align-items: center;
+      }
+      .brandRight::before{
+        background-color: white;
+      }
+    
+      .promiseItem {
+        flex-direction: column;
+        align-items: center;
+        gap: 1vh;
+        padding-left: 0;
+      }
+    
+      .dot {
+        display: none;
+      }
+}

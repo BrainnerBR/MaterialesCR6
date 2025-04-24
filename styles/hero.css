@@ -1,0 +1,75 @@
+.hero-container{
+    position: relative;
+    width: 100%;
+    height:112vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+    overflow: hidden;
+}
+.hero-container h1{
+    font-size: 10vh;
+    z-index: 2;
+    margin: 0;
+    font-weight: 600;
+}
+.hero-container h2 {
+    font-size: 6vh;
+    z-index: 2;
+    margin: 0;
+    font-weight: 400;
+    color: #fff;
+    border-bottom: 2px solid transparent; /* Hace el borde transparente */
+    background-image: linear-gradient(to right, var(--rojo), var(--azul)); /* El degradado */
+    background-size: 100% 2px; /* Ajusta el tamaño de la línea del subrayado */
+    background-position: 0 100%; /* Coloca el degradado en la parte inferior del texto */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+  
+  }
+.imgBackground {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 1;
+  }
+  .imgBackground video {
+    position: absolute;
+    top: -10%;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover;
+    opacity: 0.9;
+    filter: brightness(10%);
+    z-index: -1;
+  }
+
+
+
+  .info-section h2 {
+    margin-bottom: 20px; /* Espacio entre el texto y la animación */
+    font-size: 1.5rem; /* Tamaño del texto */
+    color: var(--gris-oscuro); /* Color del texto */
+  }
+
+  @media (max-width: 1024px) {
+    .fuertes{
+        display: none;
+
+    }
+    .hero-container h1{
+        font-size: 6vh;
+    }
+    .hero-container h2{
+        font-size: 4vh;
+    }
+  }
+
+  
+  

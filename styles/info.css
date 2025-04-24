@@ -1,0 +1,183 @@
+
+#expertos {
+    display: flex;
+    flex-direction: column; /* En pantallas pequeñas, los elementos se apilan verticalmente */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 20px;
+  }
+  
+  /* Título principal */
+  .expertos-title {
+    font-size: 2.5rem;
+    margin-bottom: 50px;
+    color: #333;
+    text-align: center;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul)); /* Degradado de colores */
+    -webkit-background-clip: text; /* Aplica el gradiente solo al texto */
+    color: transparent; 
+  }
+  
+  /* Contenedor de los Lotties */
+  .expertos-lotties {
+    display: flex;
+    justify-content: center; /* Asegura que los Lotties estén centrados */
+    gap: 20vh; /* Espacio entre las animaciones */
+    margin-top: 20px;
+    flex-wrap: wrap; /* Permite que los Lotties se acomoden si no hay espacio suficiente */
+  }
+  
+  /* Estilo para cada sección de Lottie */
+  .info-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 300px;
+  }
+  
+  /* Estilo para las animaciones Lottie */
+  .lottie-container {
+    width: 250px; /* Ajusta el tamaño de las animaciones */
+    height: 250px;
+  }
+  
+  /* Títulos de cada Lottie */
+  .lottie-title {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    border-bottom: 2px solid transparent; /* Hace el borde transparente */
+    background-image: linear-gradient(to right, var(--rojo), var(--azul)); /* El degradado */
+    background-size: 100% 2px; /* Ajusta el tamaño de la línea del subrayado */
+    background-position: 0 100%; /* Coloca el degradado en la parte inferior del texto */
+    background-repeat: no-repeat; /* Evita la repetición del fondo */
+  }
+
+
+  .proyectos-section {
+    position: relative;
+    padding: 100px 20px;
+    overflow: hidden;
+    background-color: white;
+    height: 95vh;
+  }
+  
+  .fondo-texto {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 18vw;
+    color: transparent;
+    -webkit-text-stroke: 1.6px var(--azul);
+    text-transform: uppercase;
+    white-space: nowrap;
+    z-index: 0;
+    pointer-events: none;
+  }
+  
+  .contenido {
+    position: relative;
+    z-index: 1;
+    max-width: 600px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 0;
+    padding: 200px 20px;
+    font-weight: 600;
+  }
+  .contenido h2{
+    font-size: 3rem;
+    color: var(--azul);
+    margin-bottom: 16px;
+  }
+  .contenido p{
+    font-size: 1.5rem;
+    line-height: 1.5;
+    color: #333;
+    max-width: 500px;
+  }
+  .contenido img{
+    width: 100%;
+    max-width: 500px;
+    border: 2px solid var(--azul);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+    border-radius: 12px;
+  }
+  
+  .cotizar-btn{
+    margin-top: -15vh;
+    margin-bottom: 10vh;
+    text-align: center;
+  }
+  .cotizar-btn a{
+    color: var(--azul);
+    background-color: var(--blanco);
+    padding: 20px 40px;
+    border-radius: 12px;
+    border: 3px solid transparent; /* Borde base */
+    background-image: linear-gradient(var(--blanco), var(--blanco)), linear-gradient(to right, var(--rojo), var(--azul));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    display: inline-block;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    cursor: pointer;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  }
+  .cotizar-btn a:hover {
+    transform: scale(1.05);
+  }
+  @media (max-width: 768px) {
+    .contenido {
+      flex-direction: column;
+      text-align: center;
+      padding: 60px 20px;
+    }
+    .contenido p{
+      max-width: none;
+      font-size: 1.3rem;
+    }
+    .proyectos-section {
+      height: 100vh;
+    }
+    .cotizar-btn{
+      margin-bottom: 5vh;
+      margin-top: -5vh;
+    }
+    .expertos-lotties {
+      flex-direction: row; /* Los Lotties estarán en fila */
+      justify-content: center; /* Centrado de los Lotties */
+    }
+  
+    /* Si necesitas cambiar el tamaño de las animaciones en pantallas grandes */
+    .lottie-container {
+      width: 300px;
+      height: 300px;
+    }
+  }
+    
+
+  /* Media query para pantallas muy pequeñas (hasta 480px) */
+  @media (max-width: 480px) {
+    .expertos-lotties {
+      flex-direction: column; /* Los Lotties se apilan verticalmente */
+      gap: 10px; /* Menos espacio entre los Lotties */
+    }
+  
+    .lottie-container {
+      width: 200px; /* Ajusta el tamaño de las animaciones en pantallas pequeñas */
+      height: 200px;
+    }
+  }
+
+  
+  
+  
+  

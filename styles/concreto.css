@@ -1,0 +1,338 @@
+.generalContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+    gap: 5vw;
+    padding-top: 16vh;
+}
+
+.left {
+    text-align: left;
+    width: 50vh;
+}
+
+.left h1 {
+    font-size: 3vh;
+    padding-bottom: 2vh;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul));
+    -webkit-background-clip: text;
+    color: transparent;
+}
+
+.left h2 {
+    font-size: 2.2vh;
+}
+
+.left p {
+    font-size: 2.2vh;
+    line-height: 1.5;
+}
+
+.right {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.right svg {
+    width: 30vw;
+    height: auto;
+    max-height: 400px;
+}
+.background-section {
+    width: 100%;
+    padding: 4rem 2rem;
+    background-color: #f9f9f9; /* o el fondo que prefieras */
+    display: flex;
+    justify-content: center;
+  }
+  
+  .content-wrapper {
+    display: flex;
+    max-width: 1200px;
+    width: 100%;
+    gap: 2rem;
+    align-items: center;
+    flex-wrap: wrap; /* Para mobile */
+    justify-content: center;
+  }
+  
+  .left-image img {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    object-fit: cover;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+  }
+  .left-image img:hover{
+    transform: scale(1.01);
+  }
+  
+  .card-column {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    flex: 1;
+  }
+  
+  .card {
+    border: 3px solid transparent; /* Borde base */
+    background-image: linear-gradient(var(--blanco), var(--blanco)), linear-gradient(to right, var(--rojo), var(--azul));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 2rem;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+  }
+  
+  .card:hover {
+    transform: scale(1.01);
+  }
+  
+  .card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: #333;
+  }
+  
+  .card p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.6;
+  }
+
+
+  .lightbox {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.82);
+    z-index: 9999;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+  }
+  
+  .lightbox.show {
+    opacity: 1;
+  }
+  
+  .lightbox-image {
+    border-radius: 10px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.6);
+    max-width: 90%;
+    max-height: 90%;
+    transform: scale(0.9);
+    transition: transform 0.3s ease;
+  }
+  
+  .lightbox.show .lightbox-image {
+    transform: scale(1);
+  }
+  
+  
+  .close-btn {
+    position: absolute;
+    top: 20px;
+    right: 30px;
+    font-size: 2rem;
+    color: white;
+    cursor: pointer;
+    z-index: 10000;
+  }
+  .read-more-btn{
+    display: none;
+}
+.generalContainer-fr3 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 5vw;
+    align-items: flex-start;
+    width: 100%;
+    margin: 0 auto;
+    padding: 5vh 5vw;
+    padding-top: 15vh;
+}
+  .contact-card{
+    padding: 15vh;
+    width: 20vw;
+    height: 20vh;
+    background: #aaaaaa13;
+    border: 3px solid transparent; /* Borde base */
+    background-image: linear-gradient(var(--blanco), var(--blanco)), linear-gradient(to right, var(--rojo), var(--azul));
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    transition: all 0.3s ease;
+  }
+  .contact-card i{
+    color: var(--azul);
+    font-size: 2.2rem;
+  }
+  .contact-card:hover{
+    transform: scale(1.05);
+  }
+  .contact-card h2{
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+    text-align: center;
+  }
+  .contact-card span{
+    white-space: normal;
+    overflow: visible;
+    text-overflow: unset;
+    word-break: break-word;
+    font-size: 1rem;
+  }
+  .servicios h1{
+    font-size: 3vh;
+    background-image: linear-gradient(to right, var(--rojo), var(--azul));
+    padding-top: 2vh;
+    -webkit-background-clip: text;
+    color: transparent;
+    text-align: center;
+  }
+
+
+
+
+
+  @media (max-width: 768px) {
+    .generalContainer {
+      grid-template-columns: 1fr;
+      gap: 5vh;
+      text-align: center;
+      padding-top: 15vh;
+    }
+  
+    .left {
+      width: 100%;
+      text-align: center;
+      padding: 0 5vw;
+    }
+  
+    .left h1 {
+      font-size: 3vh;
+      padding-bottom: 2vh;
+    }
+  
+    .left h2 {
+      font-size: 2.2vh;
+    }
+  
+    .left p {
+      font-size: 2.2vh;
+      line-height: 1.5;
+    }
+  
+    .right {
+      justify-content: center;
+    }
+  
+    .right svg {
+      width: 60vw;
+      max-height: 300px;
+      height: auto;
+    }
+  
+    span {
+      font-size: 1.8vh;
+    }
+  
+    .background-section {
+      padding: 2rem 1rem;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .content-wrapper {
+      flex-direction: column;
+      gap: 2rem;
+      text-align: center;
+    }
+  
+    .left-image img {
+      max-width: 90%;
+      margin-bottom: 1rem;
+    }
+  
+    .card-column {
+      width: 100%;
+    }
+    .generalContainer, .generalContainer-fr3 {
+        grid-template-columns: 1fr;
+        gap: 5vh; /* más espacio vertical en móviles */
+        text-align: center;
+        padding-top: 15vh;
+    }
+    .contact-card{
+        width: auto;
+        height: auto;
+    }
+
+  }
+  @media (max-width: 500px) {
+      
+    /* Leer más funcionalidad */
+    .text-collapse {
+        position: relative;
+        max-height: 300px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+      }
+    
+      .text-collapse::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        height: 40px;
+        width: 100%;
+        background: linear-gradient(to top, white, transparent);
+      }
+    
+      .text-collapse.expanded {
+        max-height: 1000px;
+      }
+    
+      .text-collapse.expanded::after {
+        display: none;
+      }
+    
+      .read-more-btn {
+        display: initial;
+        color: var(--azul);
+        background-color: var(--blanco);
+        padding: 10px 20px;
+        border-radius: 12px;
+        border: 3px solid transparent; /* Borde base */
+        background-image: linear-gradient(var(--blanco), var(--blanco)), linear-gradient(to right, var(--rojo), var(--azul));
+        background-origin: border-box;
+        background-clip: padding-box, border-box;
+        display: inline-block;
+        text-decoration: none;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        cursor: pointer;
+        box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+      }
+  }
+  
+  
