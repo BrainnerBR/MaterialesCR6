@@ -110,12 +110,12 @@
     border-radius: 12px;
   }
   
-  .cotizar-btn{
+  .cotizar-btn-inicio{
     margin-top: -15vh;
     margin-bottom: 10vh;
     text-align: center;
   }
-  .cotizar-btn a{
+  .cotizar-btn-inicio a{
     color: var(--azul);
     background-color: var(--blanco);
     padding: 20px 40px;
@@ -131,7 +131,7 @@
     cursor: pointer;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
   }
-  .cotizar-btn a:hover {
+  .cotizar-btn-inicio a:hover {
     transform: scale(1.05);
   }
   @media (max-width: 768px) {
@@ -147,7 +147,7 @@
     .proyectos-section {
       height: 100vh;
     }
-    .cotizar-btn{
+    .cotizar-btn-inicio{
       margin-bottom: 5vh;
       margin-top: -5vh;
     }

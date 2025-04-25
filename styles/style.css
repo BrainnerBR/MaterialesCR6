@@ -45,7 +45,7 @@
   }
   
   .logo svg {
-    height: 15vh;
+    height: 8vh;
     width: auto;
     transition: 0.2s ease-in-out;
     fill: var(--azul);
@@ -118,8 +118,6 @@
     transition: background-color 0.3s ease;
   }
   
- 
-  
   .dropdown:hover .dropdown-content {
     display: block;
   }
@@ -136,7 +134,7 @@
     right: 20px;
     background-color: #25d366;
     color: var(--blanco);
-    border-radius: 50% 50% 50% 50% / 50% 50% 50% 10%;
+    border-radius: 50% 50% 50% 50% / 50% 50% 50% 5%;
     font-size: 28px;
     padding: 14px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);

@@ -28,7 +28,7 @@ footer {
   .logo-footer svg{
     transition: 0.2s ease-in-out;
     fill: var(--negro);
-    width: 120px;
+    width: 90px;
     height: auto;
     max-width: 100%;
   }
