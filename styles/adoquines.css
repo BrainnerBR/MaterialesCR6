@@ -20,6 +20,7 @@
     background-image: linear-gradient(to right, var(--rojo), var(--azul));
     -webkit-background-clip: text;
     color: transparent;
+    max-width: fit-content;
 }
 
 .left h2 {
