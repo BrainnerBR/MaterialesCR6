@@ -93,6 +93,9 @@
   .dropdown {
     position: relative;
   }
+  .dropdown.active, .dropdown-content{
+    display: block;
+  }
   
   .dropdown-content {
     display: none;
@@ -162,7 +165,8 @@
       margin-top: -30px;
     }
     .logo svg {
-      height: 12vh;
+      height: 8vh;
+      padding-top: 2vh;
       width: auto;
       transition: 0.2s ease-in-out;
   

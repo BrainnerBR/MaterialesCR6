@@ -50,9 +50,6 @@
     gap: 5vh;
     margin-top: 15vh;
     padding: 0;
-}
-
-.myvContainer {
     padding: 1vh 15vh; /* Ajuste del padding para dispositivos móviles */
     background: #aaaaaa13;
     width: 100%;

@@ -14,7 +14,7 @@
   <link rel="stylesheet" href="/styles/info.css" />
   <link rel="stylesheet" href="/styles/footer.css" />
   <link rel="stylesheet" href="/styles/galeria.css" />
-  <link rel="shortcut icon" href="/assets/logos/camion-mezclador 16px.png">
+  <link rel="shortcut icon" href="/assets/img/Logo Real.svg">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -35,9 +35,9 @@
             <li class="dropdown">
               <a href="#" class="dropbtn" class="underline-hover">Materiales &#8595;</a>
               <ul class="dropdown-content">
-                <li><a href="#">Concreto</a></li>
-                <li><a href="#">Adoquines y Bloques</a></li>
-                <li><a href="#">Morteros</a></li>
+                <li><a href="/pages/concreto.html">Concreto</a></li>
+                <li><a href="/pages/adoquines.html">Adoquines y Bloques</a></li>
+                <li><a href="/pages/morteros.html">Morteros</a></li>
               </ul>
             </li>
             <li><a href="/pages/contacto.html" class="underline-hover">Contacto</a></li>
@@ -56,38 +56,32 @@
       </div>
 
       <section class="galeria">
-        <div>
-            <div class="lightbox" id="lightbox">
-                <span class="close-btn" onclick="closeLightbox()">&times;</span>
-                <img src="" class="lightbox-image" id="lightbox-image">
-            </div>
-            <div class="row">
-                <div class="column">
-                    <img src="/assets/img/sacos de semento.jpeg" >
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipPyF2NBBcYl9Tr0iW0YFz6g5uXoe6MbmH9p5NFs=s680-w680-h510" >
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipOw398sSL6sKkysr1G5XEVjLODkVPaMDT7M04FM=s680-w680-h510">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipOvn33YMcyLmWK0Mn57No3-VLuYf3MlgX2jYGo=s680-w680-h510" >
-                    <img src="https://images.pexels.com/photos/12032961/pexels-photo-12032961.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1" >
-                </div>
-                <div class="column">
-                    <img src="https://lh3.googleusercontent.com/p/AF1QipPdpyLR-6XonHURDVN3r2X0EXIxhEGeGZ8lLJiJ=s680-w680-h510">
-                    <img src="/assets/img/chorrea.jpg">
-                    <img src="/assets/img/chorrea4.jpg">
-                    <img src="/assets/img/adoquines.jpg">
-                    <img src="/assets/img/chorrea2.jpg">
-                    <img src="https://images.pexels.com/photos/11003992/pexels-photo-11003992.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                </div>
-                <div class="column">
-                    <img src="/assets/img/chorrea3.jpg">
-                    <img src="/assets/img/sacos de semento.jpeg">
-                    <img src="/assets/img/bomba3.JPG">
-                    <img src="/assets/img/bomba2.JPG">
-                    <img src="https://images.pexels.com/photos/12032965/pexels-photo-12032965.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1">
-                </div>
-
-            </div>
+        <div class="carousel-container">
+          <div class="lightbox" id="lightbox">
+            <span class="close-btn" onclick="closeLightbox()">&times;</span>
+            <img src="" class="lightbox-image" id="lightbox-image">
+          </div>
+          <button class="carousel-btn prev" onclick="scrollCarousel(-1)">&#10094;</button>
+          <div class="carousel-track" id="carouselTrack">
+            <img src="/assets/img/sacos de semento.jpeg">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipPyF2NBBcYl9Tr0iW0YFz6g5uXoe6MbmH9p5NFs=s680-w680-h510">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOw398sSL6sKkysr1G5XEVjLODkVPaMDT7M04FM=s680-w680-h510">
+            <img src="https://lh3.googleusercontent.com/p/AF1QipOvn33YMcyLmWK0Mn57No3-VLuYf3MlgX2jYGo=s680-w680-h510">
+            <img src="/assets/img/bomba.jpg">
+            <img src="/assets/img/bomba2.JPG">
+            <img src="/assets/img/chorrea.jpg">
+            <img src="/assets/img/chorrea4.jpg">
+            <img src="/assets/img/bomba3.JPG">
+            <img src="/assets/img/chorrea3.jpg">
+            <img src="/assets/img/repelloGrueso.jpg">
+            <img src="/assets/img/adoquines.jpg">
+            <img src="/assets/img/topografo.jpg">
+            <!-- Agrega más imágenes según lo necesites -->
+          </div>
+          <button class="carousel-btn next" onclick="scrollCarousel(1)">&#10095;</button>
         </div>
-    </section>
+      </section>
+      
     
         <footer>
 
@@ -107,9 +101,9 @@
               <ul class="nav-footer">
                 <li><a href="/">Inicio</a></li>
                 <li><a href="/pages/sobreNosotros.html">Sobre Nosotros</a></li>
-                <li>Concreto</li>
-                <li>Bloques y Adoquines</li>
-                <li>Morteros</li>
+                <li><a href="/pages/concreto.html">Concreto</a></li>
+                <li><a href="/pages/adoquines.html">Bloques y Adoquines</a></li>
+                <li><a href="/pages/morteros.html">Morteros</a></li>
                 <li><a href="/pages/contacto.html">Contacto</a></li>
               </ul>
             </div>

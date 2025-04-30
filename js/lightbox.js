@@ -1,5 +1,5 @@
 // Abrir lightbox al hacer clic en cualquier imagen de la galería
-document.querySelectorAll('.row img, .left-image img').forEach(img => {
+document.querySelectorAll('.carousel-track img, .left-image img, .content-wrapper img').forEach(img => {
     img.addEventListener('click', () => {
       openLightbox(img.src);
     });
@@ -35,4 +35,13 @@ document.querySelectorAll('.row img, .left-image img').forEach(img => {
       closeLightbox();
     }
   });
+
+  function scrollCarousel(direction) {
+    const track = document.getElementById("carouselTrack");
+    const scrollAmount = 400;
+    track.scrollBy({
+      left: scrollAmount * direction,
+      behavior: "smooth"
+    });
+  }
   
