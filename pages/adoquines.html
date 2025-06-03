@@ -118,10 +118,34 @@
           </div>
         
         </footer>
-        <a href="https://wa.me/50670419490" class="whatsapp-float" target="_blank" aria-label="Chat de Whatsapp"><i class="fab fa-whatsapp"></i></a>
-
+      <a href="https://wa.me/50670419490" onclick="return gtag_report_conversion(event);" class="whatsapp-float" target="_blank" aria-label="Chat de Whatsapp">
+        <i class="fab fa-whatsapp"></i>
+      </a>
       
       <script src="/js/script.js"></script>
       <script src="/js/lightbox.js"></script>
+
+                <script>
+    function gtag_report_conversion(event) {
+      event.preventDefault(); // Detiene la navegación por ahora
+
+      const url = 'https://wa.me/50670419490';
+
+      gtag('event', 'conversion', {
+        'send_to': 'AW-17064317901/c99qCLfzjtIaEM2n88g_',
+        'event_callback': function () {
+          window.open(url, '_blank'); // Abre WhatsApp en nueva pestaña
+        }
+      });
+
+      // Si después de 1 segundo no responde el callback, redirecciona de todos modos
+      setTimeout(() => {
+        window.open(url, '_blank');
+      }, 1000);
+
+      return false;
+    }
+
+          </script>
 </body>
 </html> 
