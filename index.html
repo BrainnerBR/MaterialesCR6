@@ -28,6 +28,7 @@
   gtag('js', new Date());
 
   gtag('config', 'AW-17064317901');
+  
 </script>
 
 </head>
@@ -172,9 +173,22 @@
           </div>
         
         </footer>
-        <a href="https://wa.me/50670419490" class="whatsapp-float" target="_blank" aria-label="Chat de Whatsapp"><i class="fab fa-whatsapp"></i></a>
-
+      <a href="https://wa.me/50670419490" onclick="return gtag_report_conversion('https://wa.me/50570419490');" class="whatsapp-float" target="_blank" aria-label="Chat de Whatsapp"><i class="fab fa-whatsapp"></i></a>
       
-      <script src="/js/script.js"></script>
+            <script src="/js/script.js"></script>
+      <script>
+      function gtag_report_conversion(url) {
+        var callback = function () {
+          if (typeof(url) != 'undefined') {
+            window.location = url;
+          }
+        };
+        gtag('event', 'conversion', {
+            'send_to': 'AW-17064317901/c99qCLfzjtIaEM2n88g_',
+            'event_callback': callback
+        });
+        return false;
+      }
+      </script>
 </body>
 </html> 
